@@ -1,4 +1,5 @@
 import 'package:firstapp/app_routes.dart'; // call a bre defiened flutter lib
+import 'package:firstapp/screens/home_screen.dart';
 import 'package:flutter/material.dart'; // this lib calls the be defiened flutter widget
 
 main(){
@@ -25,23 +26,6 @@ class MyApp extends StatelessWidget {
        // app pages, to be placed here!
       home: const HomeScreen(), // => accepts widget
       // initialRoute: HomeScreen.id, // => accepts String
-    );
-  }
-}
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-  static String id = '/HomeScreen';
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder(
-
     );
   }
 }
