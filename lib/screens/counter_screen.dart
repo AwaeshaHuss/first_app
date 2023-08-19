@@ -1,3 +1,4 @@
+import 'package:firstapp/screens/counter_screen_getx.dart';
 import 'package:flutter/material.dart';
 
 class CounterScreen extends StatefulWidget {
@@ -54,14 +55,11 @@ int value = 0;
               ),
               GestureDetector(
                 onTap: (){
-                  value >=1 ?
-                  setState(() {
-                    value --;
-                  }) : null;
+                  Navigator.pushNamed(context, CounterScreenGetX.id);
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: Icon(Icons.remove),
+                  child: Icon(Icons.arrow_circle_right),
                 ),
               ),
             ],

@@ -1,6 +1,7 @@
 import 'package:firstapp/app_routes.dart'; // call a bre defiened flutter lib
 import 'package:firstapp/screens/home_screen.dart';
-import 'package:flutter/material.dart'; // this lib calls the be defiened flutter widget
+import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart'; // this lib calls the be defiened flutter widget
 
 main(){
   
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'firstApp',
       routes: app_routes,
