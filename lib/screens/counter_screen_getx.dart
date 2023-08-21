@@ -18,7 +18,8 @@ CounterController controller = Get.put(CounterController());
         centerTitle: true,
         actions: [
           GestureDetector(
-            onTap: (){},
+            onTap: (){
+            },
             child: Padding(
               padding: const EdgeInsets.all(14.0),
               child: Text('reload'),
